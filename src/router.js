@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { Home } from './views/Home';
 import { MovieDetails } from './views/View';
@@ -11,7 +11,7 @@ export const browserHistory = createBrowserHistory()
 export const routes = {
 	root: '',
 	home: '/home',
-	view: '/view'
+	view: '/view/:id'
 }
 
 export const ApplicationRouter = () => {
