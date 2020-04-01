@@ -7,10 +7,12 @@
   "author": "Liam Read",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
+    "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
   },
   "dependencies": {
+    "history": "^4.10.1",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
