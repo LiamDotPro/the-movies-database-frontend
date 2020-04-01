@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { Home } from './views/Home';
+import { Home } from './views/home/Home';
 import { MovieDetails } from './views/View';
 
 // Expose the history so we can use it programmatically
