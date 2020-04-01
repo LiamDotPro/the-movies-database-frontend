@@ -78,3 +78,6 @@ typings/
 # Idea folder
 .idea
 /.idea
+
+# distribution folder
+/dist

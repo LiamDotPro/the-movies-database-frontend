@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import { Home } from './views/home/Home';
-import { MovieDetails } from './views/View';
+import { MovieDetails } from './views/view/View'
+import HomeContainer from './containers/HomeContainer';
 
 // Expose the history so we can use it programmatically
 export const browserHistory = createBrowserHistory()
@@ -19,9 +19,9 @@ export const ApplicationRouter = () => {
 		<Router>
 			<div>
 				<Switch>
-					<Route path={routes.home} component={Home} />
+					<Route path={routes.home} component={HomeContainer} />
 					<Route path={routes.view} component={MovieDetails} />
-					<Route path={routes.root} component={Home} />
+					<Route path={routes.root} component={HomeContainer} />
 				</Switch>
 			</div>
 		</Router>
