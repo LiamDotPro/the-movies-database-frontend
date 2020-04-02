@@ -5,10 +5,10 @@ import { SubtleBorder } from '../../components/SublteBorder/SubtleBorder'
 import { MovieInformationOverview } from '../../components/MovieInformationOverview/MovieInformationOverview'
 import moment from 'moment'
 import { routes } from '../../router'
-import { Redirect } from 'react-router-dom';
-import { tmdbImageUrlBasePath } from '../../redux/constants';
-import { convertUserScoreToPercentage } from '../../utils/convertRating';
-import { convertDuration } from '../../utils/convertDuration';
+import { Redirect } from 'react-router-dom'
+import { tmdbImageUrlBasePath } from '../../redux/constants'
+import { convertUserScoreToPercentage } from '../../utils/convertRating'
+import { convertDuration } from '../../utils/convertDuration'
 
 export class View extends React.Component {
 

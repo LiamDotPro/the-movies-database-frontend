@@ -42,6 +42,8 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "history": "^4.10.1",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2"
   }
 }

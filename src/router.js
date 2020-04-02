@@ -1,7 +1,8 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Router, Switch } from 'react-router-dom'
 import ViewContainer from './containers/ViewContainer'
-import HomeContainer from './containers/HomeContainer';
+import HomeContainer from './containers/HomeContainer'
+import { createBrowserHistory } from 'history';
 
 // Statically type our routes, this allows us to use them dynamically in the future
 export const routes = {
@@ -13,9 +14,11 @@ export const routes = {
 	}
 }
 
+export const browserHistory = createBrowserHistory()
+
 export const ApplicationRouter = () => {
 	return (
-		<Router>
+		<Router history={browserHistory}>
 			<div className={`router`}>
 				<Switch>
 					<Route path={routes.home} component={HomeContainer} />
