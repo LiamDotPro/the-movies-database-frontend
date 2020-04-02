@@ -1,16 +1,28 @@
-import { SET_MOVIE_INFO, SET_POPULAR_MOVIES_LIST } from './actionTypes'
+import { SET_MOVIE_SEARCH_RESULTS, SET_MOVIE_INFO, SET_POPULAR_MOVIES_LIST } from './actionTypes'
 
 /**
- * Request's movie information using and ID
- * @param id
- * @returns {{payload: {id: string}, type: string}}
+ * Find movies information using an ID from the popular list
+ * @param movies
+ * @returns {{payload: {movies: *}, type: string}}
  */
-export const setMovieInfo = id => ({
+export const setMovieSearchResults = movies => ({
+	type: SET_MOVIE_SEARCH_RESULTS,
+	payload: {
+		movies
+	}
+})
+
+/**
+ * Sets a movie found from the api into the selectedMovieState
+ * @param movie
+ * @returns {{payload: {movie: *}, type: string}}
+ */
+export const setMovieInfo = movie => ({
 	type: SET_MOVIE_INFO,
 	payload: {
-		id: id
+		movie
 	}
-});
+})
 
 /**
  * This action requests the TMDB endpoint for the popular movie list.

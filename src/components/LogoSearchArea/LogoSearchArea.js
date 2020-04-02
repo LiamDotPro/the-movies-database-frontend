@@ -8,7 +8,7 @@ export const LogoSearchArea = () => {
 			<div className="col-xs-12 tmdb-search-input-container">
 				<input type={`text`} placeholder={`Search`} />
 				<div className="tmdb-search-icon">
-					<img src={glass} />
+					<img src={glass} alt="search icon" />
 				</div>
 			</div>
 		</div>

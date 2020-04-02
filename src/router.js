@@ -1,26 +1,25 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { createBrowserHistory } from 'history'
-import { MovieDetails } from './views/view/View'
+import ViewContainer from './containers/ViewContainer'
 import HomeContainer from './containers/HomeContainer';
-
-// Expose the history so we can use it programmatically
-export const browserHistory = createBrowserHistory()
 
 // Statically type our routes, this allows us to use them dynamically in the future
 export const routes = {
 	root: '',
 	home: '/home',
-	view: '/view/:id'
+	view: {
+		navigate: (id) => `/view/${id}`,
+		path: '/view/:id'
+	}
 }
 
 export const ApplicationRouter = () => {
 	return (
 		<Router>
-			<div>
+			<div className={`router`}>
 				<Switch>
 					<Route path={routes.home} component={HomeContainer} />
-					<Route path={routes.view} component={MovieDetails} />
+					<Route path={routes.view.path} component={ViewContainer} />
 					<Route path={routes.root} component={HomeContainer} />
 				</Switch>
 			</div>

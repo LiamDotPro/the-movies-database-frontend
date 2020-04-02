@@ -1,0 +1,85 @@
+.tmdb-tile {
+  margin-bottom: 40px;
+
+  img {
+    background-size: cover;
+  }
+
+}
+
+.tmdb-tile-odd {
+  padding-left: 20px !important;
+  padding-right: 10px !important;
+}
+
+.tmdb-tile-even {
+  padding-left: 10px !important;
+  padding-right: 20px !important;
+}
+
+.tmdb-tile-titles {
+
+  h2 {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #E6F7FF;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 0;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: 100;
+    color: #A1D1E6
+  }
+}
+
+.tmdb-rating-tile {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  height: 0;
+
+  .tmdb-rating-container {
+    height: 20px !important;
+    width: 40px !important;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    p {
+
+      font-family: Roboto, serif;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 14px;
+
+      color: #FFFFFF;
+      margin: 0;
+      font-size: 16px;
+    }
+
+  }
+
+  .tmdb-good-rating {
+    background-color: #01D277;
+  }
+
+  .tmdb-mediocre-rating {
+    background-color: #4902A3;
+  }
+
+  .tmdb-bad-rating {
+    background-color: #D1225B;
+  }
+}
