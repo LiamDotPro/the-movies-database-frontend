@@ -21,7 +21,7 @@ export const MoviesGrid = ({ movies, pageTitle }) => {
 						rating={convertUserScoreToPercentage(el['vote_average'] ? el['vote_average']: 0)}
 						title={el.title}
 						date={moment(el['release_date']).format('MMMM YYYY')}
-						uid={el.id}
+						uid={el.id.toString()}
 						altText={el.title}
 						imageToRender={`${tmdbImageUrlBasePath}${el['poster_path']}`}
 						evenOrOddIdentifier={!!i ? 'even' : 'odd'}
@@ -37,6 +37,6 @@ export const MoviesGrid = ({ movies, pageTitle }) => {
 }
 
 MoviesGrid.propTypes = {
-	movies: PropTypes.object,
+	movies: PropTypes.array,
 	pageTitle: PropTypes.string
 }

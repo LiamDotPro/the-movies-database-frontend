@@ -30,6 +30,7 @@ export const requestMovieUsingId = id => {
 		return async function (dispatch) {
 			const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${tmdbApiKey}&language=en-US`)
 			dispatch(setMovieInfo(response.data))
+			dispatch(setMovieSearchResults([]))
 		}
 	} catch (e) {
 		browserHistory.navigate(browserHistory.home)

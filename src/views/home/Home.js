@@ -2,6 +2,7 @@ import React from 'react'
 import { LogoHeader } from '../../components/LogoHeader/LogoHeader'
 import { LogoSearchArea } from '../../components/LogoSearchArea/LogoSearchArea'
 import { MoviesGrid } from '../../components/MoviesGrid/MoviesGrid'
+import PropTypes from 'prop-types'
 
 export class Home extends React.Component {
 
@@ -29,4 +30,11 @@ export class Home extends React.Component {
 			</>
 		)
 	}
+}
+
+Home.propTypes = {
+	movies: PropTypes.array,
+	updateSearchQuery: PropTypes.func,
+	setMovieSearchResults: PropTypes.func,
+	movieSearchResults: PropTypes.array
 }

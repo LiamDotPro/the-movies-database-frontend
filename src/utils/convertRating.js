@@ -1,3 +1,3 @@
 export const convertUserScoreToPercentage = (portion) => {
-	return Math.floor((portion * 10 / 100) * 100)
+	return Math.floor((portion * 10 / 100) * 100).toString()
 }
