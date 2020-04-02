@@ -5,7 +5,7 @@ import { MovieImageContainer } from '../MovieImageContainer/MoviesImageContainer
 export const MovieInformationPanel = ({ title, userScore, date, length, posterImageToRender }) => {
 	return (
 		<div className="row">
-			<div className="col-xs-6 col-sm-3">
+			<div className="col-xs-6 col-sm-2">
 				<MovieImageContainer
 					className={'tmdb-tile-inner tmdb-tile-inner-view'}
 					imageToRender={posterImageToRender}
