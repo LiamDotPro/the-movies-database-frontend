@@ -15,3 +15,5 @@ Notes
 6) I choose redux saga's because there simple and easy to test.
 
 7) I choose to use Axios so when testing you can make use of Axios Mocks and spies and the eco system for testing.
+
+8) Normally you would use a built in linter such as eslint when sharing the project, didn't have time so just used intellij.

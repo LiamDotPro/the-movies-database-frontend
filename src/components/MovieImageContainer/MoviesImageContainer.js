@@ -2,6 +2,7 @@ import React from 'react'
 import './MoviesImageContainer.scss'
 import { getRatingColourClassNameByScore } from '../../utils/getRatingColourByScore'
 import PosterErrorPlaceholder from '../../assets/noPosterFound.png'
+import PropTypes from 'prop-types'
 
 export const MovieImageContainer = ({ className, rating, imageToRender, altText, renderRating }) => {
 
@@ -21,4 +22,12 @@ export const MovieImageContainer = ({ className, rating, imageToRender, altText,
 			<img src={imageToRender} alt={altText} onError={(ev) => addPlaceHolderImage(ev)} />
 		</div>
 	)
+}
+
+MovieImageContainer.propTypes = {
+	className: PropTypes.string,
+	rating: PropTypes.string,
+	imageToRender: PropTypes.string,
+	altTest: PropTypes.string,
+	renderRating: PropTypes.bool
 }

@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { App } from './App'
 import { Provider } from 'react-redux'
 
-// Import or store before the application is rendered
+// Import our store before the application is rendered
 import store from './redux/store'
 
 // regenerator is required to add async functions without installing further presets.

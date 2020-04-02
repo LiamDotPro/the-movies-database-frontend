@@ -2,6 +2,7 @@ import glass from '../../assets/magnifying-glass.svg'
 import React from 'react'
 import '../LogoSearchArea/LogoSearchArea.scss'
 import * as _ from 'lodash'
+import PropTypes from 'prop-types'
 
 export const LogoSearchArea = ({ updateSearchQuery, setMovieSearchResults }) => {
 
@@ -28,4 +29,9 @@ export const LogoSearchArea = ({ updateSearchQuery, setMovieSearchResults }) => 
 			</div>
 		</div>
 	)
+}
+
+LogoSearchArea.propTypes = {
+	updateSearchQuery: PropTypes.func,
+	setMovieSearchResults: PropTypes.func
 }

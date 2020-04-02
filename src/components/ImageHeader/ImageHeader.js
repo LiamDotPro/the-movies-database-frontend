@@ -4,6 +4,7 @@ import backArrow from '../../assets/backArrow.svg'
 import { routes } from '../../router'
 import { Link } from 'react-router-dom'
 import NoBannerPlaceholder from '../../assets/noBanner.png'
+import PropTypes from 'prop-types'
 
 export const ImageHeader = ({ imageToRender, altText }) => {
 
@@ -24,4 +25,9 @@ export const ImageHeader = ({ imageToRender, altText }) => {
 		</div>
 	)
 
+}
+
+ImageHeader.propTypes = {
+	imageToRender: PropTypes.string,
+	altText: PropTypes.string
 }

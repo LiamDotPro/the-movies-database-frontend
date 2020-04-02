@@ -20,6 +20,10 @@ export const getRatingColourClassNameByScore = (score) => {
 	return ratingColours.BAD
 }
 
+/**
+ * Acts as an Enum for rating colors.
+ * @type {{BAD: string, GOOD: string, MEDIOCRE: string}}
+ */
 export const ratingColours = {
 	GOOD: 'tmdb-good-rating',
 	MEDIOCRE: 'tmdb-mediocre-rating',

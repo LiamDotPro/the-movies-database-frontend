@@ -1,5 +1,6 @@
 import React from 'react'
 import './MovieInformationOverview.scss'
+import PropTypes from 'prop-types'
 
 export const MovieInformationOverview = ({ description }) => {
 	return (
@@ -14,4 +15,8 @@ export const MovieInformationOverview = ({ description }) => {
 			</div>
 		</div>
 	)
+}
+
+MovieInformationOverview.propTypes = {
+	description: PropTypes.string
 }

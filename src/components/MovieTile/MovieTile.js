@@ -3,6 +3,7 @@ import { MovieImageContainer } from '../MovieImageContainer/MoviesImageContainer
 import { Link } from 'react-router-dom'
 import { routes } from '../../router'
 import './MovieTile.scss'
+import PropTypes from 'prop-types'
 
 export const MovieTile = ({ title, date, rating, uid, evenOrOddIdentifier, imageToRender, altText }) => {
 
@@ -24,4 +25,14 @@ export const MovieTile = ({ title, date, rating, uid, evenOrOddIdentifier, image
 			</Link>
 		</div>
 	)
+}
+
+MovieTile.propTypes = {
+	title: PropTypes.string,
+	date: PropTypes.string,
+	rating: PropTypes.string,
+	uid: PropTypes.string,
+	evenOrOddIdentifier: PropTypes.string,
+	imageToRender: PropTypes.string,
+	altText: PropTypes.string
 }

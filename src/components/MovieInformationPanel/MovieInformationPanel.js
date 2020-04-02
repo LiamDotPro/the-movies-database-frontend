@@ -1,6 +1,7 @@
 import React from 'react'
 import './MovieInformationPanel.scss'
-import { MovieImageContainer } from '../MovieImageContainer/MoviesImageContainer';
+import { MovieImageContainer } from '../MovieImageContainer/MoviesImageContainer'
+import PropTypes from 'prop-types'
 
 export const MovieInformationPanel = ({ title, userScore, date, length, posterImageToRender }) => {
 	return (
@@ -27,4 +28,12 @@ export const MovieInformationPanel = ({ title, userScore, date, length, posterIm
 			</div>
 		</div>
 	)
+}
+
+MovieInformationPanel.propTypes = {
+	title: PropTypes.string,
+	userScore: PropTypes.string,
+	date: PropTypes.string,
+	length: PropTypes.string,
+	posterImageToRender: PropTypes.string
 }

@@ -4,6 +4,7 @@ import { MovieTile } from '../MovieTile/MovieTile'
 import { convertUserScoreToPercentage } from '../../utils/convertRating'
 import moment from 'moment'
 import { tmdbImageUrlBasePath } from '../../redux/constants'
+import PropTypes from 'prop-types'
 
 export const MoviesGrid = ({ movies, pageTitle }) => {
 	return (
@@ -35,3 +36,7 @@ export const MoviesGrid = ({ movies, pageTitle }) => {
 	)
 }
 
+MoviesGrid.propTypes = {
+	movies: PropTypes.object,
+	pageTitle: PropTypes.string
+}
