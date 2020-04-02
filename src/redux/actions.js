@@ -3,12 +3,13 @@ import { SET_MOVIE_SEARCH_RESULTS, SET_MOVIE_INFO, SET_POPULAR_MOVIES_LIST } fro
 /**
  * Find movies information using an ID from the popular list
  * @param movies
+ * @param query
  * @returns {{payload: {movies: *}, type: string}}
  */
-export const setMovieSearchResults = movies => ({
+export const setMovieSearchResults = (movies) => ({
 	type: SET_MOVIE_SEARCH_RESULTS,
 	payload: {
-		movies
+		movies,
 	}
 })
 

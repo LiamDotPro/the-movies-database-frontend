@@ -13,6 +13,10 @@ import { convertDuration } from '../../utils/convertDuration';
 export class View extends React.Component {
 
 	componentDidMount = async () => {
+
+		// Return the user to the top of the page.
+		window.scrollTo(0, 0)
+
 		const {
 			getSelectedMovieFromApi,
 			selectedMovie,

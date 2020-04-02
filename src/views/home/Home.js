@@ -10,7 +10,7 @@ export class Home extends React.Component {
 	}
 
 	render () {
-		const { movies } = this.props
+		const { movies, updateSearchQuery, setMovieSearchResults, movieSearchResults } = this.props
 
 		if (!movies) {
 			return null
@@ -19,8 +19,13 @@ export class Home extends React.Component {
 		return (
 			<>
 				<LogoHeader />
-				<LogoSearchArea />
-				<MoviesGrid movies={movies} />
+				<LogoSearchArea
+					updateSearchQuery={updateSearchQuery}
+					setMovieSearchResults={setMovieSearchResults}
+				/>
+				<MoviesGrid
+					pageTitle={!movieSearchResults.length ? 'Popular Movies' : 'Search Results'}
+					movies={!movieSearchResults.length ? movies : movieSearchResults} />
 			</>
 		)
 	}

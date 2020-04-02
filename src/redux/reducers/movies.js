@@ -2,11 +2,11 @@ import { SET_MOVIE_INFO, SET_MOVIE_SEARCH_RESULTS, SET_POPULAR_MOVIES_LIST } fro
 
 const initialState = {
 	popularMovies: null,
-	selectedMovie: null
+	selectedMovie: null,
+	movieSearchResults: [],
 };
 
 export default function (state = initialState, action) {
-	console.log(action.type, action.payload)
 	switch (action.type) {
 
 		case SET_POPULAR_MOVIES_LIST: {
@@ -19,6 +19,7 @@ export default function (state = initialState, action) {
 		case SET_MOVIE_SEARCH_RESULTS: {
 			return {
 				...state,
+				movieSearchResults: action.payload.movies
 			}
 		}
 
