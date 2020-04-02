@@ -20,7 +20,9 @@ export const ImageHeader = ({ imageToRender, altText }) => {
 						<img src={backArrow} alt={'go back'} />
 					</Link>
 				</div>
-				<img src={imageToRender} alt={altText} onError={(ev) => addPlaceHolderImage(ev)} />
+				<div className="tmdb-image-header-container">
+					<img src={imageToRender} alt={altText} onError={(ev) => addPlaceHolderImage(ev)} />
+				</div>
 			</div>
 		</div>
 	)
