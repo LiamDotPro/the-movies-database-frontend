@@ -1,0 +1,25 @@
+.tmdb-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: #081B23 radial-gradient(95% 170.00% at 50% -21.35%, rgba(5, 112, 172, 0.30) 0%, rgba(8, 27, 35, 0) 60%, #081B23);
+
+  .tmdb-logo {
+    height: auto;
+    width: 80px;
+    margin-bottom: 20px;
+  }
+
+  .tmdb-fractiles {
+    position: absolute;
+    background-image: url("../../assets/fractiles.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
+    width: 100vw;
+    top: 0;
+    image-rendering: auto;
+  }
+
+}

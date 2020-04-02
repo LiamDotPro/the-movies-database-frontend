@@ -4,6 +4,8 @@ import './App.scss'
 
 export const App = () => {
 	return (
-		<ApplicationRouter />
+		<div className={`container-fluid`}>
+			<ApplicationRouter />
+		</div>
 		)
 }

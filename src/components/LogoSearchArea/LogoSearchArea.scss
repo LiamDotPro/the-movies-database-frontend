@@ -1,0 +1,35 @@
+.tmdb-search-input-container {
+  position: relative;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+
+  ::placeholder {
+    color: #00d277;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  input {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 22px;
+    border: none;
+    width: 100vw;
+    height: 40px;
+    padding: 10px;
+
+  }
+
+  .tmdb-search-icon {
+    img {
+
+    }
+
+    margin-left: -30px;
+  }
+}

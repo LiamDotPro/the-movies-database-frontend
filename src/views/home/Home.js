@@ -1,5 +1,8 @@
-import React from 'react';
+import React from 'react'
 import './Home.scss'
+import { LogoHeader } from '../../components/LogoHeader/LogoHeader'
+import { LogoSearchArea } from '../../components/LogoSearchArea/LogoSearchArea'
+import { MoviesGrid } from '../../components/MoviesGrid/MoviesGrid'
 
 export class Home extends React.Component {
 
@@ -11,9 +14,11 @@ export class Home extends React.Component {
 		const { movies } = this.props
 
 		return (
-			<div>
-				{movies.map(el => <p>{el}</p>)}
-			</div>
+			<>
+				<LogoHeader />
+				<LogoSearchArea />
+				<MoviesGrid />
+			</>
 		)
 	}
 }
