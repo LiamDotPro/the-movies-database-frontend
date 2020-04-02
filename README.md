@@ -18,4 +18,4 @@ Notes
 
 8) Normally you would use a built in linter such as eslint when sharing the project, didn't have time so just used intellij inbuilt linter.
 
-9) I choose netlify over other services as the continous deployment has basically not setup required, also comes with ssl by defauly which removes having to deal with mixed content errors from within the application.
+9) I choose netlify over other services as the continous deployment has basically not setup required, also comes with ssl by default which removes having to deal with mixed content errors from within the application.
